@@ -1,5 +1,3 @@
 # ListSubscribe
 
-a little test
-
-some other text
+this is content from the svn
