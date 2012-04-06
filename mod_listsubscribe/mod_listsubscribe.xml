@@ -1,12 +1,12 @@
-<?xml version="1.0" ?>
-<mosinstall type="module">
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
   <name>ListSubscribe</name>
   <creationDate>2005-03-08</creationDate>
-  <author>Tobias Gesellchen</author>
-  <copyright>2005 http://www.gesellix.de/</copyright>
+  <copyright>(c) 2009 Tobias Gesellchen</copyright>
+  <license>GPL</license> 
   <authorEmail>tobias@gesellix.de</authorEmail>
-  <authorUrl>www.gesellix.de</authorUrl>
-  <version>2.3</version>
+  <authorUrl>http://www.gesellix.de/</authorUrl>
+  <version>2.5</version> 
   <description><![CDATA[
     <p>A Mailman Subscriber module. &copy; Tobias Gesellchen, <a href="http://www.gesellix.de/" target="_blank">www.gesellix.de</a></p>
     <p>
@@ -105,4 +105,4 @@
       label="Mailman admin password"
       description="Password for the Mailman admin interface. When empty, the subscriber is sent a confirmation mail to complete the subscription." />
   </params>
-</mosinstall>
+</install>

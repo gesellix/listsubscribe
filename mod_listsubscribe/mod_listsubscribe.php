@@ -4,11 +4,12 @@
  * ListSubscribe - A Mailman Subscriber module
  * @by Tobias Gesellchen, www.gesellix.de
  * @copyright (C) 2005 http://www.gesellix.de/
- * @version 2.3
+ * @version 2.5
+ * @licence GPL, but please send me your modifications to tobias@gesellix.de
  */
 
 # Don't allow direct access to the file
-  defined( '_VALID_MOS' ) or die( 'Direct Access to this location is not allowed.' );
+  defined( '_JEXEC' ) or die( 'Direct Access to this location is not allowed.' );
 
   $snoopy_instance;
   $login_cookies_instance;
@@ -25,7 +26,7 @@
   }
   else
   {
-    include 'modules/Snoopy.class.php';
+    include 'modules/mod_listsubscribe/Snoopy.class.php';
 
     $defaulttext      = $params->get( 'defaulttext' );
     $requestto        = $params->get( 'requestto' );
@@ -40,7 +41,7 @@
   }
 ?>
 
-  <!-- ListSubscribe - (C) 2005 by Tobias Gesellchen, www.gesellix.de -->
+  <!-- ListSubscribe - (C) 2005-2009 by Tobias Gesellchen, www.gesellix.de -->
   <script language="JavaScript1.2" type="text/javascript">
   <!--
     function emailvalidate()
@@ -229,7 +230,7 @@ function getSnoopy()
 
   if (!isset($snoopy_instance))
   {
-    $snoopy_instance = new Snoopy;
+    $snoopy_instance = new Snoopy();
   }
   return $snoopy_instance;
 }
