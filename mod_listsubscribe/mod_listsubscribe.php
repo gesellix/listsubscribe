@@ -4,7 +4,7 @@
  * ListSubscribe - A Mailman Subscriber module
  * @by Tobias Gesellchen, www.gesellix.de
  * @copyright (C) 2005 http://www.gesellix.de/
- * @version 2.5
+ * @version 2.6
  * @licence GPL, but please send me your modifications to tobias@gesellix.de
  */
 
