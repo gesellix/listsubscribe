@@ -39,6 +39,7 @@
    <files>
       <filename module="mod_listsubscribe">mod_listsubscribe.php</filename>
       <filename module="mod_listsubscribe">Snoopy.class.php</filename>
+	  <filename module="mod_listsubscribe">index.html</filename>
    </files>
    <config>
       <fields name="params">
