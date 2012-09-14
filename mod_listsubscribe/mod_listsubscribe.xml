@@ -70,6 +70,13 @@
                   default="email address..."
                   label="Default value"
                   description="Default text in input box."/>
+	    <field
+		   name="defaulttextsize"
+		   type="text"
+		   default="15"
+		   label="Default size"
+		   size="3"
+		   description="Default size for email box" />
             <field name="@spacer" type="spacer" default="" label="" description=""/>
             <field
                   name="requestto"

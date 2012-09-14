@@ -22,11 +22,13 @@ if (!isset($_POST['sendoption'])) {
    $option_add = $params->get('option_add');
    $option_del = $params->get('option_del');
    $defaulttext = $params->get('defaulttext');
+   $defaulttextsize = $params->get('defaulttextsize');   
 }
 else {
    include 'modules/mod_listsubscribe/Snoopy.class.php';
 
    $defaulttext = $params->get('defaulttext');
+   $defaulttextsize = $params->get('defaulttextsize');
    $requestto = $params->get('requestto');
    $mailsubject = $params->get('mailsubject');
    $mailfrom = $params->get('mailfrom');
@@ -178,7 +180,7 @@ switch ($_POST['sendoption']) {
       <?php if ($introduction) echo "<p>$introduction</p>"; ?>
       <form name="listsubscribeform" action="<?php echo $url; ?>" id="listsubscribeForm" method="post" onSubmit="return emailvalidate()">
          <input
-	    size="15"
+	    size="<?php echo $defaulttextsize; ?>"
             alt="list subscribe input"
             type="text"
             name="email"
