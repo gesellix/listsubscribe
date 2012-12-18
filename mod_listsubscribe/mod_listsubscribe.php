@@ -178,7 +178,7 @@ switch ($_POST['sendoption']) {
       ?>
 
       <?php if ($introduction) echo "<p>$introduction</p>"; ?>
-      <form name="listsubscribeform" action="<?php echo $url; ?>" id="listsubscribeForm" method="post" onSubmit="return emailvalidate()">
+      <form name="listsubscribeform" action="<?php echo $url; ?>" id="listsubscribeForm" method="post" onsubmit="return emailvalidate()">
          <input
 	    size="<?php echo $defaulttextsize; ?>"
             alt="list subscribe input"
